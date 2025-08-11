@@ -20,7 +20,7 @@ jobs:
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
 
-      # luôn upload báo cáo dù pass hay fail
+      # always upload the report, even if tests fail
       - name: Upload HTML report
         if: always()
         uses: actions/upload-artifact@v4

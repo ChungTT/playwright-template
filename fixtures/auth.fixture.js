@@ -4,7 +4,7 @@ const test = base.test.extend({
   authStorageState: async ({ browser }, use) => {
     const ctx = await browser.newContext();
     const page = await ctx.newPage();
-    await page.goto('/login'); // TODO: điền flow thật
+    await page.goto('/login'); // TODO: fill real flow 
     // await page.fill(...); await page.click(...);
     await ctx.storageState({ path: 'storage/auth.json' });
     await ctx.close();
