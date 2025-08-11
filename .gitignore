@@ -1,0 +1,20 @@
+# Node & build
+node_modules/
+dist/
+tmp/
+coverage/
+
+# Playwright outputs
+.playwright/
+test-results/
+playwright-report/
+reports/
+storage/
+
+# Env & IDE
+.env
+.env.*
+.DS_Store
+.vscode/
+*.log
+npm-debug.log*
